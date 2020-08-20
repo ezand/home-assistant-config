@@ -1,0 +1,9 @@
+- platform: rest
+  name: MailToday
+  resource: https://www.posten.no/levering-av-post-2020/_/component/main/1/leftRegion/1?postCode=3409
+  headers:
+    x-requested-with: XMLHttpRequest
+  scan_interval: 57600
+  json_attributes:
+    - nextDeliveryDays
+  value_template: "{{'i dag' in (value_json.nextDeliveryDays | string) }}"
