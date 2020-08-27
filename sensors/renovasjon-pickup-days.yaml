@@ -1,0 +1,7 @@
+- platform: rest
+  name: RenovasjonPickUpDays
+  resource: https://www.rfd.no/_/service/com.enonic.app.rfd/pickupDays?region_id=3049&street_code=304903280&street=Grindene&house_number=15&days=64
+  scan_interval: 57600
+  value_template: "1" # Dummy value, store actual value in json_attributes to work around the 255 char limit in sensor state
+  json_attributes:
+    - fetchDays
