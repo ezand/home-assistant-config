@@ -1,6 +1,6 @@
 - platform: rest
   name: PostenDeliveryDays
-  resource: https://www.posten.no/levering-av-post/component/main/1/leftRegion/1?postCode=3409
+  resource: https://www.posten.no/levering-av-post/component/main/1/leftRegion/9?postCode=3409
   headers:
     x-requested-with: XMLHttpRequest
   scan_interval: 57600
